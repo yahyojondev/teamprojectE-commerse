@@ -8,7 +8,9 @@ const Products = ({ data }) => {
   const productItems = data?.map((el) => (
     <div key={el.id} className="products__wrapper__product">
       <div className="product__img__wrapper">
-        <img src={el.images[0]} alt="" />
+        <NavLink to={"/singleRoute"}>
+          <img src={el.images[0]} alt="" />
+        </NavLink>
         <div className="product__wishlist__wrapper">
           <FaRegHeart />
           <FaRegEye />

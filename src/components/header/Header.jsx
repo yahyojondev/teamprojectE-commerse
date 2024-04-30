@@ -3,7 +3,7 @@ import "./header.scss";
 import { GoSearch } from "react-icons/go";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -29,24 +29,16 @@ const Header = () => {
             </div>
             <ul className="nav__end__list">
               <li className="nav__end__item">
-                <a href="#" className="nav__end__link">
-                  About Us
-                </a>
+                <NavLink to={"/"}>Home</NavLink>
               </li>
               <li className="nav__end__item">
-                <a href="#" className="nav__end__link">
-                  My Account
-                </a>
+                <NavLink to={"/about"}>About</NavLink>
               </li>
               <li className="nav__end__item">
-                <a href="#" className="nav__end__link">
-                  Wishlist
-                </a>
+                <NavLink to={"/contact"}>Contact</NavLink>
               </li>
               <li className="nav__end__item">
-                <a href="#" className="nav__end__link links">
-                  Order Tracking{" "}
-                </a>
+                <NavLink to={"/signUp"}>SignUp</NavLink>
               </li>
             </ul>
             <div className="end">

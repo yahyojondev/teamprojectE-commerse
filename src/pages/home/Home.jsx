@@ -3,8 +3,8 @@ import axios from "../../api/index";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import Products from "../../components/product/Products";
 import MainProducttop from "../../components/mainproduct__top/MainProducttop";
-// import { MdOutlineMoped } from "react-icons/md";
-// import imgbox from "../../assets/maincardimages/imgbox.png";
+// import Banner from "../../components/banner/Banner";
+
 const Home = () => {
   const [data, setData] = useState([]);
 
@@ -18,6 +18,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="container">
+        {/* <Banner /> */}
         <div className="home__wrapper">
           <div className="home__card__top__wrapper">
             <div className="home__card__top__wrapper__top">
