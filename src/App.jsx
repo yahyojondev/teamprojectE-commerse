@@ -1,11 +1,10 @@
-import { useState } from "react";
-import Navbar from "./components/navbar/Navbar";
+import Header from "./components/header/Header";
+import Home from "./pages/home/Home";
 function App() {
   return (
     <>
-      <div>
-        <Navbar />
-      </div>
+      <h2>app</h2>
+      <Home />
     </>
   );
 }
